@@ -1,0 +1,7 @@
+{
+    "API_TOKEN": ",
+    "prefix": ["?"],
+    "roles": [
+        { "admin": ["", ""] }
+    ]
+}
