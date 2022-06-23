@@ -1,9 +1,10 @@
 const { handlingPermission } = require('../config/permissionHandlers.js');
-const config = require('../config.json');
+require('dotenv').config();
 module.exports = {
     name: 'admin',
     execute(msg, args, client) {
-        const roleAllowed = config.roles.find((command) => command.admin).admin;
+        const roleAllowed = process.env.ADMIN.split(',');
+        console.log(roleAllowed);
         const status = handlingPermission(roleAllowed, msg);
         if (status) {
             msg.channel.send('Hi Admin');

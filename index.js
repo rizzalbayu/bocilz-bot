@@ -1,5 +1,7 @@
 const { Client, Intents } = require('discord.js');
-const config = require('./config.json');
+// const config = require('./config.json');
+require('dotenv').config();
+console.log();
 const fs = require('fs');
 const client = new Client({
     intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES],
@@ -18,4 +20,5 @@ for (const file of eventFiles) {
     }
 }
 
-client.login(config.API_TOKEN);
+// client.login(config.API_TOKEN);
+client.login(process.env.API_TOKEN);
