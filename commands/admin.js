@@ -1,4 +1,4 @@
-const { handlingPermission } = require('../config/permissionHandlers.js');
+const { handlingPermission } = require('../config/permission-handlers.js');
 require('dotenv').config();
 module.exports = {
     name: 'admin',

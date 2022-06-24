@@ -7,9 +7,14 @@ module.exports = {
             .setTitle('Bot Command List')
             .addField(
                 'Info',
-                '?info = default info \n ?info bot = Bot information'
+                '**?info** = default info \n ?info bot = Bot information'
             )
-            .addField('Help', '?help = Command list')
+            .addField(
+                'About Anime',
+                '**?voiceactor [name]** = Find voice actor (must correct name)'
+            )
+            .addField('Harem', '**?waifu** = Get random waifu image')
+            .addField('Help', '**?help** = Command list')
             .setFooter(
                 `info by ${client.user.username}`,
                 client.user.displayAvatarURL()
