@@ -1,4 +1,4 @@
-const commands = require('../config/commandHandlers');
+const commands = require('../config/command-handlers');
 require('dotenv').config();
 
 module.exports = {
