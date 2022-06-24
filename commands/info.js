@@ -9,15 +9,16 @@ module.exports = {
                 const embedBot = new MessageEmbed()
                     .setTitle(`${client.user.username} Bot`)
                     .setDescription(
-                        `Halo ini Bot Bocilz \n Siyap membantu di server ini`
+                        `Halo ini Bot Bocilz \n Siyap menggangu di server ini`
                     )
+                    .setColor(0x3498db)
                     .setThumbnail(client.user.displayAvatarURL());
                 msg.channel.send({ embeds: [embedBot] });
             } else {
-                msg.channel.send('bot bocilz sedang berjalan');
+                msg.channel.send('bot bocilz sedang aktif');
             }
         } else {
-            msg.channel.send('bot bocilz sedang berjalan');
+            msg.channel.send('bot bocilz sedang aktif');
         }
     },
 };
