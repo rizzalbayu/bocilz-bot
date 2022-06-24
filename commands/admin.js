@@ -4,9 +4,10 @@ module.exports = {
     name: 'admin',
     execute(msg, args, client) {
         const roleAllowed = process.env.ADMIN.split(',');
-        console.log(roleAllowed);
+        const owner = msg.guild.ownerId;
+        const author = msg.author.id;
         const status = handlingPermission(roleAllowed, msg);
-        if (status) {
+        if (status || owner == author) {
             msg.channel.send('Hi Admin');
         } else {
             msg.channel.send('not Allowed');

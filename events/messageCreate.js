@@ -22,16 +22,16 @@ module.exports = {
             }
         } else {
             const message = msg.content.toLowerCase();
-            if (message == 'halo' || message == 'Halo') {
+            if (message == 'halo') {
                 msg.reply('Halo juga ' + msg.author.username);
-            } else if (message == 'hai' || message == 'Hai') {
+            } else if (message == 'hai') {
                 msg.reply('Hai juga ' + msg.author.username);
             } else if (message.includes('ah yang bener')) {
                 msg.channel.send('Bener kok');
-            } else if (message.includes('wkwk')) {
+            } else if (message.includes('wkwkwkwk')) {
                 msg.channel.send('Ah ga lucu');
             } else if (message.includes('apa kabar')) {
-                msg.channel.send('Alhamdulillah baik');
+                msg.reply('Alhamdulillah baik');
             }
         }
     },
