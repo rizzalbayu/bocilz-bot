@@ -32,6 +32,8 @@ module.exports = {
                 msg.channel.send('Ah ga lucu');
             } else if (message.includes('apa kabar')) {
                 msg.reply('Alhamdulillah baik');
+            } else if (message.includes('ludo?')) {
+                msg.reply('Gass main ludo');
             }
         }
     },

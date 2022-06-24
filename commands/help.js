@@ -7,7 +7,8 @@ module.exports = {
             .setTitle('Bot Command List')
             .addField(
                 'Info',
-                '**?info** = default info \n ?info bot = Bot information'
+                `**?info** = default info
+                **?info bot** = Bot information`
             )
             .addField(
                 'About Anime',
