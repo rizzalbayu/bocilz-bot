@@ -8,12 +8,12 @@ module.exports = {
       .addField(
         'Info',
         `**?info** = default info
-                **?info bot** = Bot information`
+        **?info bot** = Bot information`
       )
       .addField(
         'About Anime',
-        `**?findanime [name]** = Find anime by anime scene (use image upload)
-                **?animepeople [name] | [limit]** = Find people in anime industries (default limit 1)`
+        `**?findanime [name]** = Find anime by anime scene or name (use image upload)
+        **?animepeople [name] | [limit]** = Find people in anime industries (default limit 1)`
       )
       .addField('Harem', '**?waifu** = Get random waifu image')
       .addField('Help', '**?help** = Command list')
