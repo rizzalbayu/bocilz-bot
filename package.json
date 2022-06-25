@@ -1,26 +1,26 @@
 {
-    "name": "bot-bocilz",
-    "version": "1.0.0",
-    "description": "discord bot",
-    "main": "index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "start:dev": "nodemon index.js",
-        "start": "node index.js",
-        "node .": "node run index.js"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/rizzalbayu/Bocilz_Bot.git"
-    },
-    "author": "Rizal Bayu",
-    "license": "ISC",
-    "dependencies": {
-        "axios": "^0.27.2",
-        "discord.js": "^13.1.0",
-        "dotenv": "^10.0.0"
-    },
-    "devDependencies": {
-        "nodemon": "^2.0.16"
-    }
+  "name": "bot-bocilz",
+  "version": "1.0.0",
+  "description": "discord bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "nodemon index.js",
+    "start": "node index.js",
+    "node .": "node run index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rizzalbayu/Bocilz_Bot.git"
+  },
+  "author": "Rizal Bayu",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "discord.js": "^13.1.0",
+    "dotenv": "^10.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
 }
