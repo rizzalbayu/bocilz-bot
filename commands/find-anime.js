@@ -40,8 +40,44 @@ module.exports = {
         content: 'Hasil Pencarian Anime',
         embeds: results,
       });
+    } else if (args[1]) {
+      const search = msg.content.substring(11).split(' | ');
+      const url = `https://api.jikan.moe/v4/anime?q=${search[0]}&limit=${
+        search[1] ? search[1] : 1
+      }&order_by=favorites&sort=desc`;
+      let datas,
+        response,
+        results = [];
+      try {
+        response = await axios.get(url);
+        datas = response.data.data;
+        if (!datas) msg.channel.send(`tidak ada data ${search[1]}`);
+      } catch (error) {
+        console.log(error);
+        return msg.channel.send('get data error');
+      }
+      for (const anime of datas) {
+        results.push(
+          new MessageEmbed()
+            .setTitle(anime.title)
+            .setColor(0xe67e22)
+            .setThumbnail(anime.images.jpg.image_url)
+            .addField('English title', `${anime.title_english}`)
+            .addField('URL', `${anime.url}`)
+            .addField(
+              'Season',
+              `${anime.season} ${anime.year} \n
+              **Score** : ${anime.score} **Favorites** : ${anime.favorites}`
+            )
+            .setFooter(
+              `search by ${msg.author.username}`,
+              msg.author.displayAvatarURL()
+            )
+        );
+      }
+      msg.channel.send({ embeds: results });
     } else {
-      msg.reply('need some anime image');
+      msg.reply('need some anime image or anime name');
     }
   },
 };
