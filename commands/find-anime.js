@@ -41,10 +41,10 @@ module.exports = {
         embeds: results,
       });
     } else if (args[1]) {
-      const search = msg.content.substring(11).split(' | ');
+      const search = msg.content.substring(11).split(' - ');
       const url = `https://api.jikan.moe/v4/anime?q=${search[0]}&limit=${
         search[1] ? search[1] : 1
-      }&order_by=favorites&sort=desc`;
+      }`;
       let datas,
         response,
         results = [];
@@ -65,8 +65,10 @@ module.exports = {
             .addField('English title', `${anime.title_english}`)
             .addField('URL', `${anime.url}`)
             .addField(
-              'Season',
-              `${anime.season} ${anime.year} \n
+              'Type and Season',
+              `${anime.type} ${anime.season ? anime.season : ''} ${
+                anime.year ? anime.year : ''
+              } \n
               **Score** : ${anime.score} **Favorites** : ${anime.favorites}`
             )
             .setFooter(
