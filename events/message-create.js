@@ -1,5 +1,4 @@
 const commands = require('../config/command-handlers');
-const autoMessage = require('../config/auto-message');
 const dataMessage = require('../message.json');
 require('dotenv').config();
 
