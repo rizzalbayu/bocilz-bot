@@ -1,7 +1,13 @@
 {
   "messages": [
     ["halo", "Halo juga", false, true, "reply"],
-    ["hai", "Hai juga", false, true, "reply"],
+    [
+      "hai",
+      "https://c.tenor.com/DP2Va10YJgEAAAAd/ganyu-genshin-impact.gif",
+      false,
+      true,
+      "gif"
+    ],
     ["ah yang bener", "Bener kok", true, false, "channel"],
     ["wkwkwkwk", "Ah ga lucu", true, false, "reply"],
     ["apa kabar", "Alhamdulillah baik", true, false, "reply"],
@@ -17,6 +23,42 @@
       false,
       "channel"
     ],
-    ["arma ", "Maksudmu armagentot?", true, false, "reply"]
+    ["arma ", "Maksudmu armagentot?", true, false, "reply"],
+    ["p", "Pape pape, apaan", false, false, "reply"],
+    [
+      "pedih bang",
+      "https://c.tenor.com/6uqFlfpRyeYAAAAC/patrick-patrick-star.gif",
+      false,
+      false,
+      "gif"
+    ],
+    [
+      "percaya",
+      "https://pbs.twimg.com/media/DtD_6PyUcAAbD87?format=jpg&name=360x360",
+      true,
+      false,
+      "gif"
+    ],
+    [
+      "hmmm",
+      "https://c.tenor.com/dEurReEy0zUAAAAC/sponge-bob-patrick-star.gif",
+      true,
+      false,
+      "gif"
+    ],
+    [
+      "bye",
+      "https://c.tenor.com/a5w95V3HdVcAAAAC/nileseyy-niles-peace-out.gif",
+      false,
+      false,
+      "gif"
+    ],
+    [
+      "hahahahaha",
+      "https://c.tenor.com/8FB1tCTJjdAAAAAC/haha.gif",
+      true,
+      false,
+      "gif"
+    ]
   ]
 }
