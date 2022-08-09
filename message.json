@@ -5,6 +5,10 @@
     ["ah yang bener", "Bener kok", true, false, "channel"],
     ["wkwkwkwk", "Ah ga lucu", true, false, "channel"],
     ["apa kabar", "Alhamdulillah baik", true, false, "reply"],
-    ["ludo?", "Gass main ludo", true, false, "reply"]
+    ["ludo?", "Gass main ludo", true, false, "reply"],
+    ["mending iki", "Mending kamu diam!", true, false, "reply"],
+    ["waifuku", "GWS bang-sat!", true, false, "reply"],
+    ["tenan iki", "Aku ra percoyo", true, false, "reply"],
+    ["kan pakde", "Valid nek iki", true, false, "channel"]
   ]
 }

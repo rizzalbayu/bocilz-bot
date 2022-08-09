@@ -18,7 +18,14 @@ module.exports = {
         msg.channel.send('bot bocilz sedang aktif');
       }
     } else {
-      msg.channel.send('bot bocilz sedang aktif');
+      const embedHelp = new MessageEmbed()
+        .setTitle('Info Command List')
+        .addField('Bot', `**?info bot** = Bot information`)
+        .setFooter(
+          `info by ${client.user.username}`,
+          client.user.displayAvatarURL()
+        );
+      msg.channel.send({ embeds: [embedHelp] });
     }
   },
 };
