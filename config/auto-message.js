@@ -1,4 +1,5 @@
 module.exports = {
+  // array 0 = key(trigger), array 1 = response, array 2 = include, array 3 = with author, array 4 = reply or broadcast channel
   reply: (msg, data) => {
     console.log(data);
     const message = msg.content.toLowerCase();
