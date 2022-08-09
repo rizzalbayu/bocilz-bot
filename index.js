@@ -1,7 +1,6 @@
 const { Client, Intents } = require('discord.js');
 // const config = require('./config.json');
 require('dotenv').config();
-console.log();
 const fs = require('fs');
 const client = new Client({
   intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES],

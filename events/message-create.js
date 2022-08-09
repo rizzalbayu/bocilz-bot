@@ -24,10 +24,11 @@ module.exports = {
       }
     } else {
       for (const message of dataMessage.messages) {
-        if (message[4] == 'reply') {
-          autoMessage.reply(msg, message);
-        } else {
-          autoMessage.channel(msg, message);
+        const userMessage = msg.content.toLowerCase();
+        if (userMessage === message[0] && !message[2]) {
+          autoMessage.static(msg, message);
+        } else if (userMessage.includes(message[0]) && message[2]) {
+          autoMessage.include(msg, message);
         }
       }
     }
