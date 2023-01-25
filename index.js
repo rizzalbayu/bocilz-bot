@@ -20,7 +20,6 @@ for (const file of eventFiles) {
   }
 }
 
-const hostname = process.env.HOSTNAME || '127.0.0.1';
 const port = process.env.PORT || 3000;
 
 const app = http.createServer((req, res) => {
@@ -28,8 +27,8 @@ const app = http.createServer((req, res) => {
   res.end('Bocilz online');
 });
 
-app.listen(port, hostname, () => {
-  console.log(`Server running at ${hostname}:${port}/`);
+app.listen(port, () => {
+  console.log(`Server running at port : ${port}`);
   client.login(process.env.API_TOKEN);
 });
 // client.login(config.API_TOKEN);
