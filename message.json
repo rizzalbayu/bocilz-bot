@@ -16,6 +16,8 @@
     ["waifuku", "GWS bang-sat!", true, false, "reply"],
     ["tenan iki", "Aku ra percoyo", true, false, "reply"],
     ["kan pakde", "Valid nek iki", true, false, "channel"],
+    ["lagi dimana bang?", "Lagi di GANG BANG", true, false, "reply"],
+    ["boleh?", "GAK boleh", true, false, "reply"],
     [
       "armageddon",
       "Armageddon best produk iki, ra ono tandingane",
@@ -64,6 +66,20 @@
       "percoyo",
       "https://i.pinimg.com/564x/4b/8a/66/4b8a6608540e1d063c3580cf3260a62b.jpg",
       true,
+      false,
+      "gif"
+    ],
+    [
+      "ehe",
+      "https://media.tenor.com/Za14IOIKmioAAAAC/spy-x-family-anya-forger.gif",
+      true,
+      false,
+      "gif"
+    ],
+    [
+      "ehem",
+      "https://media.tenor.com/LNtZcAZjdTUAAAAC/smirk-spongebob.gif",
+      false,
       false,
       "gif"
     ]
