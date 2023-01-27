@@ -72,7 +72,14 @@
     [
       "ehe",
       "https://media.tenor.com/Za14IOIKmioAAAAC/spy-x-family-anya-forger.gif",
-      true,
+      false,
+      false,
+      "gif"
+    ],
+    [
+      "turu",
+      "https://media.tenor.com/xNudoHWTjxkAAAAC/patrick-star-patrick.gif",
+      false,
       false,
       "gif"
     ],
