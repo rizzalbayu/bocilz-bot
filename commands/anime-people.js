@@ -15,7 +15,7 @@ module.exports = {
       try {
         response = await axios.get(url);
         datas = response.data.data;
-        if (!datas) msg.channel.send(`tidak ada data ${search[1]}`);
+        if (!datas) msg.channel.send(`${search[1]} not found`);
       } catch (error) {
         console.log(error);
         return msg.channel.send('get data error');

@@ -17,7 +17,15 @@
     ["tenan iki", "Aku ra percoyo", true, false, "reply"],
     ["kan pakde", "Valid nek iki", true, false, "channel"],
     ["lagi dimana bang?", "Lagi di GANG BANG", true, false, "reply"],
-    ["boleh?", "GAK boleh", true, false, "reply"],
+    ["lagi di mana bang?", "Lagi di GANG BANG", true, false, "reply"],
+    ["alesan opo meneh wik", "Wika cen kakehen alesan", true, false, "channel"],
+    [
+      "boleh?",
+      "GAK boleh||Boleeeeh||https://media.discordapp.net/attachments/1069529924148412416/1069879717529915402/Screenshot_2023-01-31-14-19-32-706_com.snowcorp.stickerly.android.png",
+      true,
+      false,
+      "reply"
+    ],
     [
       "armageddon",
       "Armageddon best produk iki, ra ono tandingane",
@@ -78,7 +86,7 @@
     ],
     [
       "turu",
-      "https://media.tenor.com/xNudoHWTjxkAAAAC/patrick-star-patrick.gif",
+      "https://media.tenor.com/-vuwXHdXMu4AAAAC/spongebob-sleepy.gif",
       false,
       false,
       "gif"

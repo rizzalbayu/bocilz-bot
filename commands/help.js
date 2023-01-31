@@ -10,6 +10,7 @@ module.exports = {
         `**?info** = default info
         **?info bot** = Bot information`
       )
+      .addField('Random', `**?random user** = Get random user in server`)
       .addField(
         'About Anime',
         `**?animepeople [name] - [limit]** = Find people in anime industries

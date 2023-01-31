@@ -1,6 +1,7 @@
 const commands = require('../config/command-handlers');
 const dataMessage = require('../message.json');
 require('dotenv').config();
+const separator = '||';
 
 module.exports = {
   name: 'messageCreate',
@@ -33,11 +34,15 @@ module.exports = {
       }
     }
   },
-  sent: (msg, data) => {
-    if (data[4] == 'gif') msg.channel.send(data[1]);
-    if (data[4] == 'reply')
-      msg.reply(`${data[1]} ${data[3] ? msg.author.username : ''}`);
-    if (data[4] == 'channel')
-      msg.channel.send(`${data[1]} ${data[3] ? msg.author.username : ''}`);
+  sent: (msg, message) => {
+    const messages = message[1].split(separator);
+    const messageSend = messages[Math.floor(Math.random() * messages.length)];
+    if (message[4] == 'gif') msg.channel.send(messageSend);
+    if (message[4] == 'reply')
+      msg.reply(`${messageSend} ${message[3] ? msg.author.username : ''}`);
+    if (message[4] == 'channel')
+      msg.channel.send(
+        `${messageSend} ${message[3] ? msg.author.username : ''}`
+      );
   },
 };
