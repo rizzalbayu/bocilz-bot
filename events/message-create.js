@@ -33,8 +33,9 @@ module.exports = {
           this.sent(msg, message);
         if (message[0].includes(separator)) {
           const keys = message[0].split(separator);
-          if (keys.every((key) => userMessage.includes(userMessage)))
+          if (this.isIncludesInOrder(keys, userMessage)) {
             this.sent(msg, message);
+          }
         }
       }
     }
@@ -49,5 +50,16 @@ module.exports = {
       msg.channel.send(
         `${messageSend} ${message[3] ? msg.author.username : ''}`
       );
+  },
+  isIncludesInOrder: (keys, message) => {
+    startIndex = 0;
+    for (const key of keys) {
+      startIndex = message.indexOf(key, startIndex);
+      if (startIndex === -1) {
+        return false;
+      }
+      startIndex += key.length;
+    }
+    return true;
   },
 };
