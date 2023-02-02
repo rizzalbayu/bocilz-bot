@@ -26,10 +26,15 @@ module.exports = {
       for (const message of dataMessage.messages) {
         // array 0 = key(trigger), array 1 = response, array 2 = include, array 3 = with author, array 4 = reply or broadcast channel
         const userMessage = msg.content.toLowerCase();
-        if (userMessage === message[0] && !message[2]) {
+        if (
+          userMessage === message[0] ||
+          (userMessage.includes(message[0]) && message[2])
+        )
           this.sent(msg, message);
-        } else if (userMessage.includes(message[0]) && message[2]) {
-          this.sent(msg, message);
+        if (message[0].includes(separator)) {
+          const keys = message[0].split(separator);
+          if (keys.every((key) => userMessage.includes(userMessage)))
+            this.sent(msg, message);
         }
       }
     }

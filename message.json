@@ -19,8 +19,16 @@
     ["lagi dimana bang?", "Lagi di GANG BANG", true, false, "reply"],
     ["lagi di mana bang?", "Lagi di GANG BANG", true, false, "reply"],
     ["alesan opo meneh wik", "Wika cen kakehen alesan", true, false, "channel"],
+    ["apa betul?", "Betul sekali||Tidack", true, false, "channel"],
     [
-      "boleh?",
+      "lagi?",
+      "Gas kenn||skip duls||Syudah dulu gaesss",
+      true,
+      false,
+      "channel"
+    ],
+    [
+      "boleh||?",
       "GAK boleh||Boleeeeh||https://media.discordapp.net/attachments/1069529924148412416/1069879717529915402/Screenshot_2023-01-31-14-19-32-706_com.snowcorp.stickerly.android.png",
       true,
       false,
