@@ -29,12 +29,25 @@ module.exports = {
         if (
           userMessage === message[0] ||
           (userMessage.includes(message[0]) && message[2])
-        )
+        ) {
           this.sent(msg, message);
+          return;
+        }
         if (message[0].includes(separator)) {
           const keys = message[0].split(separator);
           if (this.isIncludesInOrder(keys, userMessage)) {
-            this.sent(msg, message);
+            if (message[1] === 'sama random user') {
+              const server = msg.guild;
+              const members = server.members.cache.map((member) => {
+                return member.nickname ? member.nickname : member.user.username;
+              });
+              const member =
+                members[Math.floor(Math.random() * members.length)];
+              msg.reply(`Sama ${member}`);
+            } else {
+              this.sent(msg, message);
+            }
+            return;
           }
         }
       }

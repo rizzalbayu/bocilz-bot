@@ -7,7 +7,7 @@ module.exports = {
       if (args[1] == 'user') {
         const server = msg.guild;
         const members = server.members.cache.map((member) => {
-          return member.user.username;
+          return member.nickname ? member.nickname : member.user.username;
         });
         const member = members[Math.floor(Math.random() * members.length)];
         const embedResult = new MessageEmbed()
