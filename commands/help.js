@@ -12,6 +12,11 @@ module.exports = {
       )
       .addField('Random', `**?random user** = Get random user in server`)
       .addField(
+        'Spam',
+        `**?spam [list]** = User current spam
+      **?spam [clear]** = Clear user current spam`
+      )
+      .addField(
         'About Anime',
         `**?animepeople [name] - [limit]** = Find people in anime industries
         **?findanime [name] - [limit]** = Find anime by anime scene or name (use image upload)
@@ -19,10 +24,7 @@ module.exports = {
       )
       .addField('Harem', '**?waifu** = Get random waifu image')
       .addField('Help', '**?help** = Command list')
-      .setFooter(
-        `info by ${client.user.username}`,
-        client.user.displayAvatarURL()
-      );
+      .setFooter(`info by ${client.user.username}`, client.user.displayAvatarURL());
     msg.channel.send({ embeds: [embedHelp] });
   },
 };
