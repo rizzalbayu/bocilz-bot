@@ -1,0 +1,12 @@
+version: '2'
+services:
+  api:
+    image: bocil-bot:1
+
+    #working_dir: /src
+    command: sh -c "npm run start"
+    expose:
+      - 3000
+    environment:
+      API_TOKEN: ${API_TOKEN}
+      ADMIN: ${ADMIN}

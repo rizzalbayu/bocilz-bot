@@ -108,9 +108,14 @@ function getSpamLog(incomingMessage, client) {
       `${client.users.cache.get(userSpamStatus.id).username}`,
       `Last Key : ${userSpamStatus.lastKey} - Count : ${userSpamStatus.count}`
     );
-    console.log(userSpamStatus);
   }
   incomingMessage.channel.send({ embeds: [embedSpamLog] });
+  return;
+}
+
+function clearSpamLog(incomingMessage) {
+  userSpamStatuses = new Array();
+  incomingMessage.channel.send('Clear spam status success');
   return;
 }
 
@@ -133,7 +138,7 @@ module.exports = {
     if (args) {
       if (args[0]) {
         if (args[0] === 'spam') {
-          if (args[1] === 'clear') userSpamStatuses = new Array();
+          if (args[1] === 'clear') clearSpamLog(incomingMessage);
           if (args[1] === 'list') getSpamLog(incomingMessage, client);
         }
 
